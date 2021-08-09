@@ -1,3 +1,4 @@
+# Manager 
 import importlib
 import time
 import re
@@ -74,31 +75,28 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-`Hellow My name is` *Masha*
-`I'm here to help you manage your groups! Hit` *📚Commands* `button below to find out more about how to use me to my full potential.` 
+I am Pro Group Manager...
+I'm here to help you manage your groups! Hit *Help✨*  button below to find out more about how to use me to my full potential.....!
 """
 
 buttons = [
     [
         InlineKeyboardButton(
-            text="➕️ ADD MASHA TO YOUR GROUP ➕️", url="t.me/MashaRoBot?startgroup=true"),
+            text="➕️ ADD ME TO YOUR GROUP ➕️", url="http://t.me/Urs6789_bot?startgroup=true"),
     ],
     [
-        InlineKeyboardButton(text="ℹ️ ABOUT", callback_data="masha_"),
-        InlineKeyboardButton(text="📚 COMMANDS", callback_data="help_back"),
+        InlineKeyboardButton(text="Specialised bot FoR", url="https://t.me/Udaan_reloaded"),
+        InlineKeyboardButton(text="Help✨", callback_data="help_back"),
     ],
     [
         InlineKeyboardButton(
-            text="💾 SOURCE", callback_data="source_"),
-        InlineKeyboardButton(
-            text="👥 SUPPORT", url="https://t.me/wastebots"
-        ),
-    ],
-]
+            text="👥 SUPPORT", url="https://t.me/Udaan_reloaded"),
+            ]
+        ]
 
 
 HELP_STRINGS = """
-*『HELP BUTTONS HERE』*"""
+* My features:-> *"""
 
 
 DONATE_STRING = """No need.. I'm rich"""
@@ -738,4 +736,4 @@ if __name__ == "__main__":
     LOGGER.info("Successfully loaded modules: " + str(ALL_MODULES))
     telethn.start(bot_token=TOKEN)
     pbot.start()
-    main()
+    main():
